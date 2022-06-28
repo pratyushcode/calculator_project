@@ -1,0 +1,92 @@
+/* .title{
+    text-align: center;
+    color: darkblue;
+    border: 2px solid black;
+    width:200px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond; */
+/* } */
+
+.title{
+    height: 2rem;
+    width: 11rem;
+    padding: auto;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: centre;
+    align-items: center;
+    border-radius: 10px;
+    background: blueviolet;
+    cursor: pointer;
+    line-height: 1cm;
+}
+.title::after{
+    content: "";
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    position:absolute;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+    border-radius: 10px;
+    background:linear-gradient(90deg,
+    deeppink,deepskyblue,lawngreen,deeppink);
+    background-size: 300% 100%;
+    animation: animate 3s ease infinite;
+
+}
+
+@keyframes animate{
+    to{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 90% 0%;
+
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+    
+}
+input[type="button"]
+{
+    background-color:blueviolet ;
+    color:white ;
+    border:solid black 2px;
+    width: 100%;
+}
+input[type="button"]:hover{
+    background-color:rgb(83, 81, 81);
+}
+ input[type="text"]
+ {
+     background-color:white ;
+     border: solid 2px black;
+     width: 100%;
+ }
+ input[type="text"]:hover{
+     background-color: yellowgreen;
+ }
+ input[type="reset"]
+ {
+     background-color:blueviolet ;
+     border: solid 2px black;
+     width: 100%;
+ }
+ input[type="reset"]:hover{
+    background-color:red;
+ }
+ .calculator{
+     display: inline-block;
+     background-color: black;
+ }
+ .button{
+     background-color: antiquewhite;
+
+ }
+ .button:hover{
+     background-color: aquamarine;
+ }
